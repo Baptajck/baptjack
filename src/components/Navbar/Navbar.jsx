@@ -40,10 +40,24 @@ function Navbar() {
             <a href="#Contact">Contact</a>
           </div>
           <div className={s.networks}>
-            <Icon Icon={Linkedin} size="small" title="LinkedIn" />
-            <Icon Icon={Github} size="small" title="GitHub" />
-            <Icon Icon={CodeWars} size="small" title="CodeWars" />
-            <Icon Icon={RootMe} size="small" title="RootMe" />
+            <a
+              href="https://www.linkedin.com/in/baptiste-parville/"
+              target="__blank"
+            >
+              <Icon Icon={Linkedin} size="small" title="LinkedIn" />
+            </a>
+            <a href="https://github.com/Baptajck" target="__blank">
+              <Icon Icon={Github} size="small" title="GitHub" />
+            </a>
+            <a href="https://www.codewars.com/users/Baptajck" target="__blank">
+              <Icon Icon={CodeWars} size="small" title="CodeWars" />
+            </a>
+            <a
+              href="https://www.root-me.org/Baptjack?lang=en#525387ba49b66fe3e94e9c24fc1dd029"
+              target="__blank"
+            >
+              <Icon Icon={RootMe} size="small" title="RootMe" />
+            </a>
           </div>
           <div className={s.navigationContainer}>
             {showMenu ? (
