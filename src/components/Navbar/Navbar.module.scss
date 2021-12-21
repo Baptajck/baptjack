@@ -1,0 +1,136 @@
+@import "../../styles/variables.scss";
+
+.container {
+  position: relative;
+  width: 100%;
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+
+    .logoContainer {
+      width: 50%;
+
+      span svg path {
+        fill: var(--nav-color);
+      }
+    }
+
+    .anchor {
+      display: none;
+    }
+
+    .networks {
+      display: none;
+    }
+
+    .navigationContainer {
+      display: flex;
+      width: 50%;
+      justify-content: flex-end;
+    }
+  }
+
+  .openNavigation {
+    background-color: var(--bgc);
+  }
+
+  .bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: var(--overlay-color);
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0 1.5em 1em;
+    line-height: 3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: var(--bgc);
+    position: absolute;
+    width: calc(100% - 3em);
+    z-index: 2;
+
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
+    a:hover {
+      color: $blue900;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    .navigation {
+      justify-content: space-between;
+      padding-left: 0;
+      padding-right: 0;
+
+      .logoContainer {
+        width: calc(100% / 3);
+
+        span svg path {
+          fill: var(--nav-color);
+        }
+      }
+
+      .anchor {
+        display: flex;
+        width: calc(100% / 3);
+        justify-content: space-between;
+
+        a {
+          text-decoration: none;
+          color: var(--text-color);
+        }
+
+        a:hover {
+          color: $blue900;
+        }
+      }
+
+      .networks {
+        display: flex;
+        justify-content: flex-end;
+        width: calc(100% / 3);
+
+        span {
+          padding: 1em;
+        }
+
+        span svg path {
+          fill: var(--nav-color);
+        }
+
+        span:hover svg path {
+          fill: $blue900;
+        }
+      }
+
+      .navigationContainer {
+        display: none;
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .bg {
+      display: none;
+    }
+  }
+}

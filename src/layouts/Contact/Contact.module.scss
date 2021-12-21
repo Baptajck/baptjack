@@ -1,0 +1,142 @@
+.container {
+  position: relative;
+  padding-top: 8em;
+
+  .dots {
+    position: absolute;
+    top: 0;
+    left: -5em;
+  }
+
+  .content {
+    background-color: var(--contact-rectangle);
+    padding: 3em 1em;
+    margin: 3em 0.5em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .containerMessage {
+      background-color: #d4edda;
+      padding: 0.5em 1em;
+      border-radius: 10px;
+      margin-bottom: 1.5em;
+      .message {
+        color: #256434;
+      }
+    }
+
+    .intro {
+      text-transform: uppercase;
+      color: var(--about-intro);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 1.25em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      margin: 1em 0 0;
+      font-size: 2.5rem;
+      color: var(--text-color);
+      text-align: center;
+    }
+
+    .icon {
+      margin-top: 2.5em;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2em;
+      padding: 1em 2em;
+      border-radius: 20px;
+      box-sizing: border-box;
+      background-color: var(--contact-form-bg);
+      color: #130f49;
+      width: 90%;
+
+      .formDiv {
+        margin: 1em 0 0;
+        width: 100%;
+
+        .label {
+          display: block;
+          margin-bottom: 0.5em;
+
+          .required {
+            color: #d74848;
+          }
+        }
+
+        .formInput {
+          background-color: var(--contact-form-bg);
+          border-style: none none solid;
+          border-width: 2px;
+          border-color: #ececf0;
+          width: 100%;
+          margin-bottom: 1em;
+        }
+
+        .formInput:focus {
+          border-color: #3898ec;
+          outline: 0;
+        }
+      }
+
+      .btn {
+        all: unset;
+        padding: 1em;
+        margin: 1em 0;
+        background-color: #130f49;
+        color: #f8f8fa;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1em 2em 0;
+
+      .logo {
+        margin: 2.5em 0;
+        cursor: pointer;
+
+        svg path {
+          fill: var(--nav-color);
+        }
+      }
+
+      .anchors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .anchor {
+          color: var(--text-color);
+          padding: 1em 1.5em;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    .content {
+      .form {
+        width: 50%;
+      }
+    }
+  }
+}

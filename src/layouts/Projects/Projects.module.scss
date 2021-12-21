@@ -1,0 +1,130 @@
+.rectangularShape {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 70%;
+  min-height: 670px;
+  border-top-left-radius: 55px;
+  border-bottom-left-radius: 55px;
+  background-color: var(--projects-rectangle);
+}
+
+.container {
+  padding: 3.75em 0;
+  margin: 5em auto;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-family: "Karla", sans-serif;
+    }
+
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 0;
+
+      .link {
+        color: var(--projects-emphase);
+        margin: 0 0.4em 0 0.3em;
+        text-decoration: none;
+      }
+
+      .arrow {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .projects {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .containerImg {
+      position: relative;
+      margin-bottom: 0.9em;
+      padding: 0.5em;
+
+      .img {
+        // display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 10px 0 30px 0 var(--projects-shadow);
+        object-fit: cover;
+      }
+
+      .info {
+        position: absolute;
+        color: #f8f8fa;
+        background-color: rgba(19, 15, 73, 0.6);
+        width: calc(100% - 3em);
+        padding: 1em;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        bottom: 0.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .infoTitle {
+          margin: 0;
+        }
+
+        .description {
+          margin-bottom: 0;
+        }
+
+        .button {
+          all: unset;
+          cursor: pointer;
+          padding: 0.5em;
+          border-radius: 10px;
+          background-color: #d74848;
+
+          &:hover {
+            background-color: darken(#d74848, 15%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .rectangularShape {
+    width: 60%;
+    min-height: 800px;
+  }
+
+  .container {
+    margin: 15em 0;
+    .header {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .projects {
+      flex-direction: row;
+      justify-content: space-around;
+
+      .containerImg {
+        width: calc((100% / 3) - 1em);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    margin: 0;
+    height: calc(100vh - 5em);
+  }
+}

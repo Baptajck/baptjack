@@ -1,0 +1,39 @@
+@import "./theme.scss";
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+html {
+  background-color: var(--bgc);
+  color: var(--text-color);
+  font-family: "Karla", sans-serif;
+  transition: 0.4s;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1.25em;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1.25em;
+  color: var(--text-color);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}

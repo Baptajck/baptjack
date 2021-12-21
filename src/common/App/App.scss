@@ -1,0 +1,28 @@
+.app {
+  max-width: 1170px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  .containerApp {
+    padding: 0 0.5rem;
+  }
+
+  .roundShape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    svg ellipse {
+      fill: var(--header-rounded-shape);
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .app {
+    .containerApp {
+      padding: 0;
+    }
+  }
+}

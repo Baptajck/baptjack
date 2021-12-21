@@ -1,0 +1,148 @@
+.rectangularShape {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  height: 1800px;
+  width: 70%;
+  min-width: 370px;
+  border-top-right-radius: 55px;
+  border-bottom-right-radius: 55px;
+  background-color: var(--about-rectangle);
+}
+
+.container {
+  padding: 6.25em 0;
+
+  .intro {
+    text-transform: uppercase;
+    color: var(--about-intro);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1.25em;
+  }
+
+  .title {
+    font-family: "Karla", sans-serif;
+    font-size: 4rem;
+    color: var(--text-color);
+    margin-bottom: 0.5em;
+    width: 70%;
+  }
+
+  .description {
+    margin-bottom: 0.4em;
+    font-size: 1.1rem;
+    letter-spacing: -0.03em;
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--skills-card-text);
+  }
+
+  .downloadLink {
+    text-decoration: none;
+    cursor: pointer;
+    margin: 3em auto 0;
+    display: flex;
+    justify-content: center;
+    width: 216px;
+
+    .btn {
+      all: unset;
+      padding: 1em;
+      background-color: var(--about-intro);
+      color: #130f49;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        padding-left: 1em;
+        svg {
+          width: 24px;
+          height: 24px;
+
+          path {
+            fill: #130f49;
+          }
+        }
+      }
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+    margin: 1em auto;
+    list-style: none;
+
+    .network {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 210px;
+      width: 70%;
+      // margin: 0 auto;
+      margin-bottom: 1em;
+      background-color: var(--bgc);
+      padding: 1em;
+      border-radius: 32px;
+      box-shadow: 14px 14px 120px 0 var(--skills-card-shadow);
+      transition: 0.1s ease;
+
+      &:hover {
+        border: 1px solid #f8979b;
+      }
+
+      .networkName {
+        margin-top: 0.5em;
+        text-align: center;
+        color: var(--text-color);
+      }
+
+      .networkIcon svg {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .rectangularShape {
+    min-height: 500px;
+    height: 970px;
+    width: 80%;
+  }
+
+  .container {
+    padding: 4.25em 0;
+
+    .networks {
+      flex-direction: row;
+      justify-content: center;
+      height: 300px;
+      width: 100%;
+
+      .network {
+        width: 100%;
+        margin-right: 1em;
+        max-width: 275px;
+        max-height: 210px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .rectangularShape {
+    width: 75%;
+  }
+}

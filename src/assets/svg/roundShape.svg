@@ -1,0 +1,14 @@
+<svg width="305" height="361" xmlns="http://www.w3.org/2000/svg">
+  <mask
+    id="a"
+    mask-type="alpha"
+    maskUnits="userSpaceOnUse"
+    x="0"
+    y="0"
+    width="305"
+    height="361"
+  >
+    <path d="M0 0h305v361H0z" />
+  </mask>
+  <g mask="url(#a)"><ellipse cx="252" cy="122" rx="223" ry="224" /></g>
+</svg>

@@ -1,0 +1,106 @@
+.container {
+  margin-top: 4em;
+
+  .title {
+    text-align: center;
+  }
+
+  .containerCards {
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin: 1.6em 0.3em;
+      padding: 2.2em;
+      border-radius: 16px;
+      background-color: var(--bgc);
+
+      &:hover {
+        box-shadow: 11px 11px 130px 70px var(--skills-card-shadow);
+      }
+
+      .headerCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .headerCardSvg {
+          width: 25px;
+          height: 25px;
+          padding: 1em;
+          background-color: var(--bgColorIcon);
+          border-radius: 10px;
+
+          svg path {
+            fill: var(--colorIcon);
+          }
+        }
+
+        .headerCardTitle {
+          margin: 1.25em 0 0.4em;
+        }
+      }
+
+      .text {
+        margin-bottom: 0.6em;
+        font-family: Karla, sans-serif;
+        color: var(--skills-card-text);
+        font-size: 1.1rem;
+        line-height: 1.6;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        flex: 1;
+      }
+
+      .containerSkills {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+
+        .skill {
+          width: 25px;
+          height: 25px;
+          margin-right: 2em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    margin-top: 4em;
+    height: calc(100vh - 5em);
+
+    .containerCards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .card {
+        width: 43%;
+        margin: 1.6em 0 0;
+
+        .headerCard {
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+
+          .headerCardTitle {
+            margin: 0 0 0 1.25em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    margin-top: 0;
+    height: calc(100vh - 5em);
+  }
+}

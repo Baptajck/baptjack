@@ -1,0 +1,22 @@
+.container {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switchTheme {
+  width: 80px;
+}
+
+.moon {
+  svg path {
+    fill: #a4aba1;
+  }
+}
+
+.sun {
+  svg path {
+    fill: yellow;
+  }
+}

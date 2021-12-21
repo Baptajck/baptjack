@@ -1,0 +1,43 @@
+/* ------ LIGHT ------ */
+.theme-light {
+  --text-color: #130f49;
+  --text-emphase-color: #34a1cd;
+  --bgc: #fff;
+  --overlay-color: #ccc;
+  --nav-color: #55527c;
+  --header-rounded-shape: #f4f3ff;
+  --skills-card-bg: #fff;
+  --skills-card-text: #55527c;
+  --skills-card-shadow: rgba(206, 212, 224, 0.18);
+  --projects-rectangle: #fff5f6;
+  --projects-emphase: #d74848;
+  --projects-shadow: rgba(206, 212, 224, 0.26);
+  --about-rectangle: #f8f8ff;
+  --about-intro: #b4b2c5;
+  --contact-rectangle: #e9f9ff;
+  --contact-form-bg: #fff;
+  --contact-button-bg: #edccd0;
+  --contact-button-icon: #f66565;
+}
+
+/* ------ DARK ------ */
+.theme-dark {
+  --text-color: #f8f8fa;
+  --text-emphase-color: #58cfff;
+  --bgc: #161616;
+  --overlay-color: #202020;
+  --nav-color: #f8f8fa;
+  --header-rounded-shape: #694460;
+  --skills-card-bg: #202020;
+  --skills-card-text: #f8f8fa;
+  --skills-card-shadow: rgba(40, 40, 40, 0.18);
+  --projects-rectangle: #863756;
+  --projects-emphase: #fff5f6;
+  --projects-shadow: rgba(40, 40, 40, 0.26);
+  --about-rectangle: #832625;
+  --about-intro: #d9d9e2;
+  --contact-rectangle: #375969;
+  --contact-form-bg: #f5f5f5;
+  --contact-button-bg: #d74848;
+  --contact-button-icon: #f8f8fa;
+}

@@ -1,0 +1,56 @@
+@import "../../styles/variables.scss";
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  path {
+    fill: $grey900;
+  }
+}
+
+.inverted {
+  .icon {
+    background-color: transparent;
+    svg path {
+      fill: $grey300;
+    }
+  }
+}
+
+.small {
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.medium {
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.large {
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.hamburger {
+  .icon {
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    background-color: var(--bgc);
+    color: var(--text-color);
+    padding: 0.9rem;
+
+    svg path {
+      fill: var(--text-color);
+    }
+  }
+}
