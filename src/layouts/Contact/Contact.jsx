@@ -2,8 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 import s from "./Contact.module.scss";
 
-import { NavLink } from "react-router-dom";
-
 import Icon from "../../components/Icon/Icon";
 
 import { ReactComponent as Logo } from "../../assets/svg/logo-light.svg";
@@ -84,6 +82,7 @@ function Contact() {
               type="text"
               className={s.formInput}
               name="lastname"
+              id="lastname"
               value={user.lastname}
               onChange={(e) => handleChange(e)}
               required
@@ -97,6 +96,7 @@ function Contact() {
               type="email"
               className={s.formInput}
               name="email"
+              id="email"
               pattern=".+\@.+\..+"
               value={user.email}
               onChange={(e) => handleChange(e)}
@@ -112,6 +112,7 @@ function Contact() {
               className={s.formInput}
               value={user.sub}
               name="sub"
+              id="sub"
               onChange={(e) => handleChange(e)}
               required
             />
@@ -125,6 +126,7 @@ function Contact() {
               rows="5"
               value={user.message}
               name="message"
+              id="message"
               onChange={(e) => handleChange(e)}
               required
             ></textarea>

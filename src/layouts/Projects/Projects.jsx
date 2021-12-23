@@ -2,9 +2,9 @@ import s from "./Projects.module.scss";
 
 import { ReactComponent as ArrowRight } from "../../assets/svg/arrow-right.svg";
 
-import Likemovie from "../../assets/images/likemovie.png";
-import Becomepote from "../../assets/images/BeComePote.png";
-import Spreadthelive from "../../assets/images/spreadthelive.png";
+import Likemovie from "../../assets/images/likemovie.webp";
+import Becomepote from "../../assets/images/BeComePote.webp";
+import Spreadthelive from "../../assets/images/spreadthelive.webp";
 
 function Projects() {
   const data = [
@@ -42,14 +42,9 @@ function Projects() {
               rel="noreferrer"
             >
               Github
-            </a>
-            <a
-              href="https://github.com/Baptajck?tab=repositories"
-              target="_blank"
-              rel="noreferrer"
-              className={s.arrow}
-            >
-              <ArrowRight />
+              <span className={s.arrow}>
+                <ArrowRight />
+              </span>
             </a>
           </p>
         </div>
@@ -59,7 +54,7 @@ function Projects() {
               <img className={s.img} src={img} alt={title} />
               <div className={s.info}>
                 <div>
-                  <h4 className={s.infoTitle}>{title}</h4>
+                  <h3 className={s.infoTitle}>{title}</h3>
                   <p className={s.description}>{description}</p>
                 </div>
                 <a

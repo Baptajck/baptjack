@@ -1,6 +1,6 @@
 import s from "./Header.module.scss";
 
-import profil from "../../assets/images/profil.png";
+import profil from "../../assets/images/profil.webp";
 import { ReactComponent as DotsPurple } from "../../assets/svg/dotsPurple.svg";
 
 import SwitchTheme from "../../components/SwitchTheme/SwitchTheme";
@@ -21,7 +21,7 @@ function Header({ changeTheme, setChangeTheme }) {
           <span className={s.emphase}>Au plaisir d'échanger avec vous !</span>
         </p>
         <div className={s.containerTheme}>
-          <h4 className={s.titleTheme}>Thème</h4>
+          <p className={s.titleTheme}>Thème</p>
           <SwitchTheme
             changeTheme={changeTheme}
             setChangeTheme={setChangeTheme}

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import s from "./SwitchTheme.module.scss";
 import { setTheme } from "../../utils/theme";
@@ -9,7 +10,7 @@ import { ReactComponent as Sun } from "../../assets/svg/sun.svg";
 import { ReactComponent as Moon } from "../../assets/svg/moon.svg";
 
 function SwitchTheme({ changeTheme = false, setChangeTheme = () => {} }) {
-  const [togClass, setTogClass] = useState("dark");
+  const [_, setTogClass] = useState("dark");
   let theme = localStorage.getItem("portfolio-baptjack-theme");
 
   const handleOnClick = () => {

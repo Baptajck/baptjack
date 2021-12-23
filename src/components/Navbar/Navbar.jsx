@@ -1,9 +1,6 @@
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import s from "./Navbar.module.scss";
 import cx from "classnames";
-
-import { useWindowSize } from "../../utils/windowSize";
 
 import { ReactComponent as Logo } from "../../assets/svg/logo-light.svg";
 import { ReactComponent as Hamburger } from "../../assets/svg/hamburger-menu.svg";

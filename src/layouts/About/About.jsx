@@ -50,7 +50,7 @@ function About() {
             </span>
           </button>
         </a>
-        <ul className={s.networks}>
+        <div className={s.networks}>
           {data.map(({ link, text, Icon }, i) => (
             <a
               key={i}
@@ -59,13 +59,11 @@ function About() {
               rel="noreferrer"
               className={s.network}
             >
-              <li>
-                <span className={s.networkIcon}>{Icon}</span>
-                <p className={s.networkName}>{text}</p>
-              </li>
+              <span className={s.networkIcon}>{Icon}</span>
+              <span className={s.networkName}>{text}</span>
             </a>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
