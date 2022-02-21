@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.1df66c03.chunk.css",
-    "main.js": "/static/js/main.d5a0c2cd.chunk.js",
-    "main.js.map": "/static/js/main.d5a0c2cd.chunk.js.map",
+    "main.js": "/static/js/main.64af62fa.chunk.js",
+    "main.js.map": "/static/js/main.64af62fa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f8d26273.js",
     "runtime-main.js.map": "/static/js/runtime-main.f8d26273.js.map",
     "static/js/2.60cb3842.chunk.js": "/static/js/2.60cb3842.chunk.js",
@@ -34,7 +34,7 @@
     "static/media/logo-light.0735ce27.svg": "/static/media/logo-light.0735ce27.svg",
     "static/media/mail.519ddb53.svg": "/static/media/mail.519ddb53.svg",
     "static/media/mongodb.42d8dfcf.svg": "/static/media/mongodb.42d8dfcf.svg",
-    "static/media/moon.2dc7c555.svg": "/static/media/moon.2dc7c555.svg",
+    "static/media/moon.daa0ba21.svg": "/static/media/moon.daa0ba21.svg",
     "static/media/mysql.8063a0b5.svg": "/static/media/mysql.8063a0b5.svg",
     "static/media/node-js.44e6760f.svg": "/static/media/node-js.44e6760f.svg",
     "static/media/note-light.7e2b2e40.svg": "/static/media/note-light.7e2b2e40.svg",
@@ -57,6 +57,6 @@
     "static/js/runtime-main.f8d26273.js",
     "static/js/2.60cb3842.chunk.js",
     "static/css/main.1df66c03.chunk.css",
-    "static/js/main.d5a0c2cd.chunk.js"
+    "static/js/main.64af62fa.chunk.js"
   ]
 }
