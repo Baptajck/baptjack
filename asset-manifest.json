@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.2181361c.chunk.css",
-    "main.js": "/static/js/main.7b196c09.chunk.js",
-    "main.js.map": "/static/js/main.7b196c09.chunk.js.map",
+    "main.js": "/static/js/main.313e83bc.chunk.js",
+    "main.js.map": "/static/js/main.313e83bc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f8d26273.js",
     "runtime-main.js.map": "/static/js/runtime-main.f8d26273.js.map",
     "static/js/2.60cb3842.chunk.js": "/static/js/2.60cb3842.chunk.js",
@@ -50,13 +50,13 @@
     "static/media/server-light.5d507880.svg": "/static/media/server-light.5d507880.svg",
     "static/media/spreadthelive.2945e711.webp": "/static/media/spreadthelive.2945e711.webp",
     "static/media/stack-overflow.3451eaeb.svg": "/static/media/stack-overflow.3451eaeb.svg",
-    "static/media/sun.2c786114.svg": "/static/media/sun.2c786114.svg",
+    "static/media/sun.a9da5055.svg": "/static/media/sun.a9da5055.svg",
     "static/media/trello.87dd7602.svg": "/static/media/trello.87dd7602.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f8d26273.js",
     "static/js/2.60cb3842.chunk.js",
     "static/css/main.2181361c.chunk.css",
-    "static/js/main.7b196c09.chunk.js"
+    "static/js/main.313e83bc.chunk.js"
   ]
 }
