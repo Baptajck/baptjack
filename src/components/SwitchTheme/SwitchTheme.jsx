@@ -14,7 +14,6 @@ function SwitchTheme({ changeTheme = false, setChangeTheme = () => {} }) {
   let theme = localStorage.getItem("portfolio-baptjack-theme");
 
   const handleOnClick = () => {
-    setChangeTheme(!changeTheme);
     if (localStorage.getItem("portfolio-baptjack-theme") === "theme-dark") {
       setTheme("theme-light");
       setTogClass("light");
@@ -25,9 +24,13 @@ function SwitchTheme({ changeTheme = false, setChangeTheme = () => {} }) {
   };
 
   useEffect(() => {
-    localStorage.getItem("portfolio-baptjack-theme") === "theme-dark"
-      ? setTogClass("dark")
-      : setTogClass("light");
+    if (localStorage.getItem("portfolio-baptjack-theme") === "theme-dark") {
+      setTogClass("dark");
+      setChangeTheme(true);
+    } else {
+      setTogClass("light");
+      setChangeTheme(false);
+    }
   }, [theme]);
 
   return (

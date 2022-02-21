@@ -27,7 +27,7 @@ const data = [
     Icon: Screen,
     title: "Front End",
     description:
-      "Elaboration, conception graphique, intégration, référencement SEO, contenu dynamique, composants autonomes, cycle de vie, logique d’interaction, optimisation des performances",
+      "Elaboration, intégration, référencement SEO, contenu dynamique, composants autonomes, cycle de vie, optimisation des performances",
     bgColorIcon: "#E9F9FF",
     colorIcon: "#58CFFF",
     skills: [
@@ -53,7 +53,8 @@ const data = [
   {
     Icon: Note,
     title: "Gestion",
-    description: "Outil de développement, commandes git, trello, méthode scrum",
+    description:
+      "Outil de développement, commandes git, trello, méthodes agile (scrum)",
     bgColorIcon: "#FFF5F6",
     colorIcon: "#F66565",
     skills: [
@@ -66,8 +67,7 @@ const data = [
   {
     Icon: Book,
     title: "Apprentissage",
-    description:
-      "Amélioration de la logique, apprentissage constant, veille technologique",
+    description: "Exercices de programmation, veille technologique",
     bgColorIcon: "#F4F3FF",
     colorIcon: "#665AFF",
     skills: [

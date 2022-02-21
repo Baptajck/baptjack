@@ -11,7 +11,7 @@ function Footer({ changeTheme, setChangeTheme }) {
           setChangeTheme={setChangeTheme}
         />
       </div>
-      <p>2021 Baptiste Parville</p>
+      <p>2021 - {new Date().getFullYear()} Baptiste Parville</p>
     </div>
   );
 }

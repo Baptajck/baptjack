@@ -49,8 +49,11 @@
     color: var(--text-color);
     padding: 0.9rem;
 
-    svg path {
-      fill: var(--text-color);
+    svg {
+      width: 25px;
+      path {
+        fill: var(--text-color);
+      }
     }
   }
 }
