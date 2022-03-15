@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
+import cx from "classnames";
 import s from "./Contact.module.scss";
+import BarLoader from "react-spinners/BarLoader";
 
 import Icon from "../../components/Icon/Icon";
 
@@ -16,6 +18,12 @@ function Contact() {
     message: "",
   });
   const [messageSend, setMessageSend] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const btnSend = cx({
+    [`${s.btn}`]: !messageSend,
+    [`${s.sendMessage}`]: messageSend,
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,11 +35,13 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     axios
       .post("https://portfolio-baptjack.herokuapp.com/contact", user)
       .then((res) => {
         if (res.status === 200) {
+          setLoading(false);
           setMessageSend(true);
           setUser({
             lastname: "",
@@ -69,11 +79,6 @@ function Contact() {
           onSubmit={(e) => sendEmail(e)}
           className={s.form}
         >
-          {messageSend && (
-            <div className={s.containerMessage}>
-              <p className={s.message}>Message envoyé</p>
-            </div>
-          )}
           <div className={s.formDiv}>
             <label htmlFor="lastname" className={s.label}>
               Nom, prénom <span className={s.required}>*</span>
@@ -131,8 +136,24 @@ function Contact() {
               required
             ></textarea>
           </div>
-          <button type="submit" className={s.btn}>
-            Envoyer le message
+          <button type="submit" className={btnSend}>
+            {loading ? (
+              <BarLoader
+                css={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  margin: "0 auto",
+                }}
+                size={20}
+                color={"#fff"}
+                loading={loading}
+              />
+            ) : (
+              <span>
+                {messageSend ? "Message envoyé" : "Envoyer le message"}
+              </span>
+            )}
           </button>
         </form>
         <div className={s.navigation}>

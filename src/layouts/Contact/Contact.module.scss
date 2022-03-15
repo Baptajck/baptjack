@@ -17,16 +17,6 @@
     flex-direction: column;
     align-items: center;
 
-    .containerMessage {
-      background-color: #d4edda;
-      padding: 0.5em 1em;
-      border-radius: 10px;
-      margin-bottom: 1.5em;
-      .message {
-        color: #256434;
-      }
-    }
-
     .intro {
       text-transform: uppercase;
       color: var(--about-intro);
@@ -98,6 +88,16 @@
         color: #f8f8fa;
         border-radius: 10px;
         cursor: pointer;
+      }
+
+      .sendMessage {
+        all: unset;
+        padding: 1em;
+        margin: 1em 0;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #d4edda;
+        color: #256434;
       }
     }
 
