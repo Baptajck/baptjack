@@ -3,7 +3,7 @@ import s from "./About.module.scss";
 import { ReactComponent as Linkedin } from "../../assets/svg/linkedin-color.svg";
 import { ReactComponent as Github } from "../../assets/svg/github-color.svg";
 import { ReactComponent as Download } from "../../assets/svg/download.svg";
-import pdf from "../../assets/Baptiste_Parville-CV.pdf";
+import pdf from "../../assets/baptiste_parville_CV.pdf";
 
 function About() {
   const data = [

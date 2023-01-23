@@ -5,6 +5,7 @@ import { ReactComponent as ArrowRight } from "../../assets/svg/arrow-right.svg";
 import Likemovie from "../../assets/images/likemovie.webp";
 import Becomepote from "../../assets/images/BeComePote.webp";
 import Spreadthelive from "../../assets/images/spreadthelive.webp";
+import TalentPicker from "../../assets/images/talentPicker.png";
 
 function Projects() {
   const data = [
@@ -25,6 +26,12 @@ function Projects() {
       description: "Appli de captation vidéo",
       img: Spreadthelive,
       link: "https://spreadthelive.com/",
+    },
+    {
+      title: "TalentPicker",
+      description: "Appli de recrutement",
+      img: TalentPicker,
+      link: "https://www.talentpicker.io/",
     },
   ];
   return (

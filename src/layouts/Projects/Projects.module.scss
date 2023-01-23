@@ -109,6 +109,7 @@
 
   .container {
     margin: 15em 0;
+
     .header {
       flex-direction: row;
       align-items: center;
@@ -128,7 +129,7 @@
 
 @media screen and (min-width: 1600px) {
   .container {
-    margin: 0;
+    margin: 0 0 5em;
     height: calc(100vh - 5em);
   }
 }

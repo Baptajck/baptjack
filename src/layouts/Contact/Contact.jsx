@@ -71,9 +71,11 @@ function Contact() {
         </h3>
         <h3 className={s.title}>N'hésitez pas à me contacter !</h3>
         <span className={s.icon}>
-          <Mail />
+          <a href="mailto:baptiste.parville@protonmail.com">
+            <Mail />
+          </a>
         </span>
-        <form
+        {/* <form
           id="contact-form"
           method="POST"
           onSubmit={(e) => sendEmail(e)}
@@ -155,7 +157,7 @@ function Contact() {
               </span>
             )}
           </button>
-        </form>
+        </form> */}
         <div className={s.navigation}>
           <span className={s.logo}>
             <Icon
