@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.de4c84c9.chunk.css",
-    "main.js": "/static/js/main.3d81e380.chunk.js",
-    "main.js.map": "/static/js/main.3d81e380.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.578939d2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.578939d2.js.map",
-    "static/js/2.89bdebb2.chunk.js": "/static/js/2.89bdebb2.chunk.js",
-    "static/js/2.89bdebb2.chunk.js.map": "/static/js/2.89bdebb2.chunk.js.map",
-    "static/js/3.8e0f3dd9.chunk.js": "/static/js/3.8e0f3dd9.chunk.js",
-    "static/js/3.8e0f3dd9.chunk.js.map": "/static/js/3.8e0f3dd9.chunk.js.map",
+    "main.css": "/static/css/main.9cd81599.chunk.css",
+    "main.js": "/static/js/main.d74f4bf1.chunk.js",
+    "main.js.map": "/static/js/main.d74f4bf1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ccb863c0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ccb863c0.js.map",
+    "static/js/2.2d94adb8.chunk.js": "/static/js/2.2d94adb8.chunk.js",
+    "static/js/2.2d94adb8.chunk.js.map": "/static/js/2.2d94adb8.chunk.js.map",
+    "static/js/3.7d3b99a4.chunk.js": "/static/js/3.7d3b99a4.chunk.js",
+    "static/js/3.7d3b99a4.chunk.js.map": "/static/js/3.7d3b99a4.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.de4c84c9.chunk.css.map": "/static/css/main.de4c84c9.chunk.css.map",
-    "static/js/2.89bdebb2.chunk.js.LICENSE.txt": "/static/js/2.89bdebb2.chunk.js.LICENSE.txt",
-    "static/media/Baptiste_Parville_CV.13d3e218.pdf": "/static/media/Baptiste_Parville_CV.13d3e218.pdf",
+    "static/css/main.9cd81599.chunk.css.map": "/static/css/main.9cd81599.chunk.css.map",
+    "static/js/2.2d94adb8.chunk.js.LICENSE.txt": "/static/js/2.2d94adb8.chunk.js.LICENSE.txt",
     "static/media/BeComePote.923ce9ea.webp": "/static/media/BeComePote.923ce9ea.webp",
     "static/media/arrow-right.7e0ba346.svg": "/static/media/arrow-right.7e0ba346.svg",
+    "static/media/baptiste_parville_CV.ab958f3f.pdf": "/static/media/baptiste_parville_CV.ab958f3f.pdf",
     "static/media/book.b74f6c7f.svg": "/static/media/book.b74f6c7f.svg",
     "static/media/close.0d4785f2.svg": "/static/media/close.0d4785f2.svg",
     "static/media/codewars-color.1416f1a7.svg": "/static/media/codewars-color.1416f1a7.svg",
@@ -51,12 +51,13 @@
     "static/media/spreadthelive.2945e711.webp": "/static/media/spreadthelive.2945e711.webp",
     "static/media/stack-overflow.3451eaeb.svg": "/static/media/stack-overflow.3451eaeb.svg",
     "static/media/sun.f9d338f4.svg": "/static/media/sun.f9d338f4.svg",
+    "static/media/talentPicker.87d372a1.png": "/static/media/talentPicker.87d372a1.png",
     "static/media/trello.87dd7602.svg": "/static/media/trello.87dd7602.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.578939d2.js",
-    "static/js/2.89bdebb2.chunk.js",
-    "static/css/main.de4c84c9.chunk.css",
-    "static/js/main.3d81e380.chunk.js"
+    "static/js/runtime-main.ccb863c0.js",
+    "static/js/2.2d94adb8.chunk.js",
+    "static/css/main.9cd81599.chunk.css",
+    "static/js/main.d74f4bf1.chunk.js"
   ]
 }
